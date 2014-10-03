@@ -1,7 +1,8 @@
 {% if site.safe and site.JB.analytics.provider and page.JB.analytics != false %}
-
+analytics
 {% case site.JB.analytics.provider %}
 {% when "google" %}
+  _by_
   {% include JB/analytics-providers/google %}
 {% when "getclicky" %}
   {% include JB/analytics-providers/getclicky %}
