@@ -3,7 +3,7 @@ layout: post
 title: "Jekyll Bootstrapでサイト構築"
 description: ""
 category: 
-tags: [Ruby, Jekyll, Mac]
+tags: [Ruby, Jekyll, Mac, GitHub]
 ---
 {% include JB/setup %}
 

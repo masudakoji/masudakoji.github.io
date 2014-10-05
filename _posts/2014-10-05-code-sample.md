@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "code sample"
+title: "Jekyll-Bootstrapでpigmentsを使ってシンタックスハイライト表示するには"
 description: ""
 category: 
-tags: [ruby, jekyll, GitHub]
+tags: [Ruby, Jekyll, GitHub]
 ---
 {% include JB/setup %}
 
-### Jekyllでシンタックスハイライトを使う
+## はじめに
 ちゃんとした？コードだったらGistを使ったほうが手っ取り早いのかも知れませんが。ちょっとしたコードを記事中に貼り付ける際に、シンタックスハイライトを行いたいので、その方法を。
 
 シンタックスハイライトはpygmentsを使えばいいそうです。
@@ -16,25 +16,18 @@ tags: [ruby, jekyll, GitHub]
 
 GitHubにはpygmentsは既に入っているみたいなので、テーマのhtmlファイルの中でcssを読み込む記述さえ入れておけば良い。
 
+## cssを読み込む
 テーマ'twitter'ならば、`_includes/themes/twitter`の`default.html`の中に
 
-{% highlight html %}
-<link href="{{ ASSET_PATH }}/css/syntax.css?body=1" rel="stylesheet" type="text/css" media="all">
+{% highlight html %}{% raw %}
+<link href="{{ ASSET_PATH }}/css/syntax.css?body=1" rel="stylesheet" type="text/css" media="all">{% endraw %}
 {% endhighlight %}
 
 を追加しておく。そして当然css実物も必要ですので、
 
 `assets/themes/twitter/css`の中にsyntax.cssを追加しておく。
 
-記事中に貼り付ける際には以下のようにすると、
-
-	{% highlight ruby linenos %}
-	def foo
-	  puts 'foo'
-	end
-	{% endhighlight %}
-
-色分けされて表示されます。
+記事中に貼り付ける際には、`{% raw %}{% highlight ruby linenos%}{% endraw %}`と`{% raw %}{% endhighlight %}{% endraw %}`で囲んでコードを記述すると、以下のように色分けされて表示されます。
 
 {% highlight ruby linenos %}
 def foo
@@ -42,6 +35,11 @@ def foo
 end
 {% endhighlight %}
 
-#### 参考
+### 参考
 [Creating your Jekyll-Bootstrap powered blog for R blogging](http://lcolladotor.github.io/2013/11/09/new-Fellgernon-Bit-setup-in-Github/#.VDCwMCl_vgI)
 
+[How to escape liquid template tags?](http://stackoverflow.com/questions/3426182/how-to-escape-liquid-template-tags)
+
+[jekyllのブログで投稿一覧ページにtwitterのボタンを置く](http://imaizu.me/program/twbtn-on-jekyll-post.html)
+
+余談ですが、jekyllの括弧のエスケープにはまっていました。
