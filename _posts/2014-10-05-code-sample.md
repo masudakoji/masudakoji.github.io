@@ -26,3 +26,9 @@ puts charlie.hello
 # >> Hello, friend!
 # >> My name is Charlie!
 {% endhighlight %}
+
+
+```python
+print("hello, world")
+```
+
