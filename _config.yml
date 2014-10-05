@@ -12,10 +12,10 @@ title : Koji Masuda
 tagline: Kobe City College of Technology
 author :
   name : Koji MASUDA
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner :
+  email : masuda@kobe-kosen.ac.jp
+  github : masudakoji
+  twitter : kcct_masuda
+  feedburner : feedburner
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -70,7 +70,7 @@ JB :
   # Some JB helpers refer to these paths; change them here if needed.
   #
   archive_path: /archive.html
-  categories_path : /categories.html
+  #categories_path : /categories.html
   tags_path : /tags.html
   atom_path : /atom.xml
   rss_path : /rss.xml
