@@ -19,4 +19,4 @@ Sphinxとは、Pythonで書かれたドキュメントビルダーで、Python�
 javascript:var ret=window.prompt('LinkTagForSphinx','`'+document.title+'  <'+location.href+'>`_');
 {% endhighlight %}
 
-適当な上のスクリプトを
+上のスクリプトを新しいリンクとして追加すれば使えます。
