@@ -16,4 +16,3 @@ tagline: Kobe City College of Technology
   {% endfor %}
 </ul>
 
-{{page.url}}
