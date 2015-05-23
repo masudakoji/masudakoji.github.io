@@ -1,0 +1,17 @@
+---
+layout: page
+title : Archive
+lang: ja
+header : Post Archive
+group: navigation
+---
+{% include JB/setup %}
+Language Select: 
+<ul>
+   <li><a href='{{HOME_PATH}}archive.html'>en</a></li>
+   <li><a href='{{HOME_PATH}}ja/archive.html'>ja</a></li>
+</ul>
+
+
+{% assign posts_collate=site.posts | where:"lang", page.lang %}
+{% include JB/posts_collate %}
