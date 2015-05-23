@@ -1,0 +1,10 @@
+{% assign posts=site.posts | where:"date", page.date | sort: 'path' %}
+Language Select:
+<ul>
+{% for post in posts %}
+    <li class="lang">
+        <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+    </li>
+{% endfor %}
+</ul>
+
