@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "OpenPIVをMacにインストールする"
-description: ""
-category: 
+lang: ja
+category: ja
 tags: [Mac, Python, PIV, Open PIV, Fluid Mechanics]
 ---
 {% include JB/setup %}
+{% include JB/langselect %}
+
 <!-- Install OpenPIV on Mac -->
 
 MacにオープンソースのPIV (Particle Image Velocimetry) ツールのOpenPIVをインストールしました。

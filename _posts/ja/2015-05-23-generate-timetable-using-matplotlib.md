@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "matplotlibを使ってタイムテーブルを作る"
-description: ""
-category: 
+lang: ja
+category: ja
 tags: [matplotlib, Python]
 ---
 {% include JB/setup %}
+{% include JB/langselect %}
+
 <!--Generate timetable using matplotlib-->
 
 ##はじめに

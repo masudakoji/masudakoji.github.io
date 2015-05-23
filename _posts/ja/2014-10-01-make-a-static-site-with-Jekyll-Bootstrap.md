@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Jekyll Bootstrapでサイト構築"
-description: ""
-category: 
+lang: ja
+category: ja
 tags: [Ruby, Jekyll, Mac, GitHub]
 ---
 {% include JB/setup %}
+{% include JB/langselect %}
+
 
 ## Jekyll Bootstrapとは
 

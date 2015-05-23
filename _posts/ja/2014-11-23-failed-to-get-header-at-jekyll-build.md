@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Jekyllでpygmentsを使っている際にコンパイルに失敗する"
-description: ""
-category: 
+lang: ja
+category: ja
 tags: [Python, Jekyll]
 ---
 {% include JB/setup %}
+{% include JB/langselect %}
+
 
 ## pygmentsはPython3に対応していない
 

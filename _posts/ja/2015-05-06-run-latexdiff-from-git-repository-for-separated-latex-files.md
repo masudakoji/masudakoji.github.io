@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "GitリポジトリからLaTeXソースを取り出してLaTeXdiffにかけるプログラム"
-description: ""
-category: 
+lang: ja
+category: ja
 tags: [LaTeX, Python, Git]
 ---
 {% include JB/setup %}
+{% include JB/langselect %}
+
 <!--Run LaTeXdiff from Git repository for separated LaTeX files-->
 
 ##はじめに
