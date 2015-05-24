@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Disqusのアカウントを取った"
-lang: en
-category: en
+lang: ja
+category: ja
 tags: [Jekyll, GitHub]
 ---
 {% include JB/setup %}
