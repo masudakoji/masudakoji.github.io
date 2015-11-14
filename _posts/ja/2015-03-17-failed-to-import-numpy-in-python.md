@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "numpyが使えなくなってしまったのを修正"
-description: ""
-category: 
+lang: ja
+category: ja
 tags: [Python, numpy]
 ---
 {% include JB/setup %}
+{% include JB/langselect %}
+
 
 ## numpyがimport出来ない
 

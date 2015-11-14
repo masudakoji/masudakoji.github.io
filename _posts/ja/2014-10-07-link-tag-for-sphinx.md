@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Sphinx（reST）用のリンクタグを出力するブックマークレット"
-description: ""
-category: 
+lang: ja
+category: ja
 tags: [Python, Sphinx, reST]
 ---
 {% include JB/setup %}
+{% include JB/langselect %}
+
 
 ## Sphinxとは
 

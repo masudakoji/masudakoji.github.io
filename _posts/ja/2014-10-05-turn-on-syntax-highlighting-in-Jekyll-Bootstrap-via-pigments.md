@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Jekyll-Bootstrapでpigmentsを使ってシンタックスハイライト表示するには"
-description: ""
-category: 
+lang: ja
+category: ja
 tags: [Ruby, Jekyll, GitHub]
 ---
 {% include JB/setup %}
+{% include JB/langselect %}
+
 
 ## はじめに
 ちゃんとした？コードだったらGistを使ったほうが手っ取り早いのかも知れませんが。ちょっとしたコードを記事中に貼り付ける際に、シンタックスハイライトを行いたいので、その方法を。

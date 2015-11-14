@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "OpenPIVのチュートリアルプログラムのバグ"
-description: ""
-category: 
+title: "Fixing bugs in tutorial program of OpenPIV"
+lang: en
+category: en
 tags: [Mac, Python, PIV, Open PIV, Fluid Mechanics]
 ---
 {% include JB/setup %}
+{% include JB/langselect %}
+
 <!--Fixing bugs in tutorial program of OpenPIV-->
 
 [前回の記事](../../../../2015/04/18/install-openpiv-on-mac/)でオフィシャルのOpenPIVに同梱されているチュートリアルプログラムにバグがあるといいました。

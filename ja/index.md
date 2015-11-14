@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Koji MASUDA
-lang: en
+lang: ja
 tagline: Kobe City College of Technology
 ---
 {% include JB/setup %}

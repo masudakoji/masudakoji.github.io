@@ -1,0 +1,5 @@
+Language Select: 
+<ul>
+   <li><a href='{{HOME_PATH}}'>en</a></li>
+   <li><a href='{{HOME_PATH}}ja/'>ja</a></li>
+</ul>

@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "matplotlibを使ってタイムテーブルを作る"
-description: ""
-category: 
+lang: ja
+category: ja
 tags: [matplotlib, Python]
 ---
 {% include JB/setup %}
+{% include JB/langselect %}
+
 <!--Generate timetable using matplotlib-->
 
 ##はじめに
@@ -45,7 +47,7 @@ tags: [matplotlib, Python]
 Room数を増やしたければ、roomsリストに追加してください。それにともなって、colorsリストにも色を追加してください。
 日にちが増えるようでしたら、input_filesリストに追加してください。あわせてday_labelsにも追加してください。
 
-{% highlight python %}
+{% highlight python linenos%}
 #!usr/bin/env python
 #coding: utf-8
 import matplotlib.pyplot as plt
