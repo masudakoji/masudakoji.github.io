@@ -30,14 +30,22 @@
     <hr>
     <div class="pagination">
       <ul>
-      {% if page.previous %}
+      {% if page.previous.lang == page.lang %}
         <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+      {% elsif page.previous.previous.lang == page.lang %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.previous.url }}" title="{{ page.previous.previous.title }}">&larr; Previous</a></li>
+      {% elsif page.previous.previous.previous.lang == page.lang %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.previous.previous.url }}" title="{{ page.previous.previous.previous.title }}">&larr; Previous</a></li>
       {% else %}
         <li class="prev disabled"><a>&larr; Previous</a></li>
       {% endif %}
         <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
-      {% if page.next %}
+      {% if page.next.lang == page.lang %}
         <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+      {% elsif page.next.next.lang == page.lang %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.next.url }}" title="{{ page.next.next.title }}">Next &rarr;</a></li>
+      {% elsif page.next.next.next.lang == page.lang %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.next.next.url }}" title="{{ page.next.next.next.title }}">Next &rarr;</a></li>
       {% else %}
         <li class="next disabled"><a>Next &rarr;</a>
       {% endif %}
